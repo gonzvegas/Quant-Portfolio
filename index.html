@@ -11,75 +11,81 @@
             line-height: 1.6;
         }
         .container {
-            max-width: 800px;
+            display: flex;
+            max-width: 1000px;
             margin: 0 auto;
+        }
+        .left-column {
+            flex: 1;
+            padding-right: 20px;
+        }
+        .right-column {
+            flex: 2;
         }
         .profile-pic {
             width: 150px;
             height: 150px;
             border-radius: 50%;
-            display: block;
-            margin: 20px auto;
+            object-fit: cover;
         }
-        .resume-section {
+        .section {
             margin-bottom: 20px;
         }
         h1, h2, h3 {
-            text-align: center;
+            margin-top: 0;
+        }
+        ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        .skills-list, .projects-list {
+            margin-top: 10px;
+        }
+        .skills-list li, .projects-list li {
+            margin-bottom: 10px;
         }
     </style>
 </head>
 <body>
     <div class="container">
-        <h1>Gonzalo Vegas</h1>
-        <div class="profile-pic">
+        <div class="left-column">
             <img src="IMG_5456.jpg" alt="Profile Picture" class="profile-pic">
+            <h1>Gonzalo Vegas</h1>
+            <p><a href="mailto:Gonzvegas@gmail.com">Gonzvegas@gmail.com</a></p>
+            <p>Phone: 786-403-5618</p>
+            <p><a href="http://www.linkedin.com/in/gonzalovegas03" target="_blank">LinkedIn</a></p>
         </div>
-        <h2>Contact Information</h2>
-        <p>Email: Gonzvegas@gmail.com | Phone: 786-403-5618 | <a href="http://www.linkedin.com/in/gonzalovegas03" target="_blank">LinkedIn</a></p>
-        
-        <div class="resume-section">
-            <h2>Education</h2>
-            <p><strong>Florida International University</strong> – Bachelor's degree in Economics (March 2017 - March 2021)</p>
-            <p><strong>Columbia University School of Engineering</strong> – Financial Technologies Certificate (March 2022 - October 2022)</p>
-            <p><strong>Nova Southeastern University</strong> – Master's degree in Computer Science (Concentration: Artificial Intelligence) (August 2023 – December 2024)</p>
-        </div>
-        
-        <div class="resume-section">
-            <h2>Summary of Qualifications</h2>
-            <p>Over three years of experience as a Data Analyst with specialization in financial modeling, risk analysis, and data-driven decision-making. Skilled in SQL, Python, and Alteryx, with a solid foundation in economics and FinTech. Currently pursuing a degree in Computer Science focused on AI and data science.</p>
-        </div>
-        
-        <div class="resume-section">
-            <h2>Professional Experience</h2>
-            <h3>Bayview Asset Management (Coral Gables, FL) - Data & Reporting Analyst (July 2023 - Present)</h3>
-            <ul>
-                <li>Developed automation in Alteryx Designer & SQL to resolve data errors in Salesforce.</li>
-                <li>Utilized Power BI for KPI reports and predictive modeling.</li>
-                <li>Led fallout analysis to improve deal retention.</li>
-                <li>Managed monthly accruals and updated financial models.</li>
-                <li>Designed and implemented a pricing model for small balance commercial products.</li>
-            </ul>
-
-            <h3>BANESCO USA Bank (Coral Gables, FL) - Data & Risk Analyst (June 2022 - March 2023)</h3>
-            <ul>
-                <li>Executed stress tests and scenario analysis on commercial real estate portfolio.</li>
-                <li>Developed a risk appetite framework for key financial metrics.</li>
-                <li>Designed a dynamic model for monitoring liquidity metrics during a financial crunch.</li>
-            </ul>
-
-            <h3>KPMG US (Orlando, FL) - Business Analyst (December 2020 - December 2021)</h3>
-            <ul>
-                <li>Engaged in internal audit processes for reliable financial reporting.</li>
-                <li>Evaluated internal control structures for compliance and efficiency.</li>
-                <li>Managed multiple audit projects and collaborated effectively with team members.</li>
-            </ul>
-        </div>
-        
-        <div class="resume-section">
-            <h2>Technical Skills & Tools</h2>
-            <p>Advanced in SQL, proficient in Python, skilled with Power BI, Tableau, Looker, and experienced in risk management and cross-functional collaboration.</p>
+        <div class="right-column">
+            <div class="section">
+                <h2>About Me</h2>
+                <p>I am a master's student in Computer Science with a focus on Artificial Intelligence, bringing a strong background in economics and financial technology. I specialize in data-driven decision-making, financial modeling, and risk analysis, with a keen interest in quantitative finance.</p>
+            </div>
+            <div class="section">
+                <h2>Skills</h2>
+                <ul class="skills-list">
+                    <li>Programming: Python, SQL, Alteryx</li>
+                    <li>Data Visualization: Power BI, Tableau</li>
+                    <li>Financial Modeling</li>
+                    <li>Risk Management</li>
+                    <li>Machine Learning</li>
+                </ul>
+            </div>
+            <div class="section">
+                <h2>Education</h2>
+                <p><strong>Florida International University</strong> – Bachelor's degree in Economics (March 2017 - March 2021)</p>
+                <p><strong>Columbia University School of Engineering</strong> – Financial Technologies Certificate (March 2022 - October 2022)</p>
+                <p><strong>Nova Southeastern University</strong> – Master's degree in Computer Science (Concentration: Artificial Intelligence) (August 2023 – December 2024)</p>
+            </div>
+            <div class="section">
+                <h2>Projects</h2>
+                <ul class="projects-list">
+                    <li><strong>Project 1: Economic Indicator Dashboard</strong> – A comprehensive dashboard analyzing key economic indicators for investment strategies.</li>
+                    <li><strong>Project 2: Machine Learning in Finance</strong> – Implemented predictive models to forecast market trends and asset prices.</li>
+                    <li><strong>Project 3: Data Discrepancy Automation</strong> – Developed an Alteryx workflow to automate the identification and resolution of data discrepancies in financial databases.</li>
+                </ul>
+            </div>
         </div>
     </div>
 </body>
 </html>
+

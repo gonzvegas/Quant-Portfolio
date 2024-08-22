@@ -15,20 +15,19 @@
             max-width: 1000px;
             margin: 0 auto;
         }
-        .profile-pic {
-            width: 200px;
-            height: 200px;
-            border-radius: 50%;
-            display: block;
-            margin: 20px auto;
-            object-fit: cover;
-        }
         .left-column {
             flex: 1;
             padding-right: 20px;
+            text-align: center; /* Center the image */
         }
         .right-column {
             flex: 2;
+        }
+        .profile-pic {
+            width: 120px; /* Make the image smaller */
+            height: 120px;
+            border-radius: 50%;
+            object-fit: cover;
         }
         .section {
             margin-bottom: 20px;
@@ -49,11 +48,9 @@
     </style>
 </head>
 <body>
-    <!-- Add the image here to make it very visible -->
-    <img src="IMG_5657.jpeg" alt="Profile Picture" class="profile-pic">
-
     <div class="container">
         <div class="left-column">
+            <img src="IMG_5456.jpeg" alt="Profile Picture" class="profile-pic">
             <h1>Gonzalo Vegas</h1>
             <p><a href="mailto:Gonzvegas@gmail.com">Gonzvegas@gmail.com</a></p>
             <p>Phone: 786-403-5618</p>
@@ -92,5 +89,3 @@
     </div>
 </body>
 </html>
-
-

@@ -4,68 +4,72 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Gonzalo Vegas - Quantitative Finance Portfolio</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
     <style>
         body {
-            font-family: Arial, sans-serif;
-            margin: 20px;
+            font-family: 'Open Sans', Arial, sans-serif;
+            background-color: #f4f4f4;
+            color: #333;
+            margin: 0;
             line-height: 1.6;
         }
         .container {
-            display: flex;
+            display: grid;
+            grid-template-columns: 1fr 2fr;
+            gap: 20px;
             max-width: 1000px;
-            margin: 0 auto;
+            margin: 20px auto;
         }
         .left-column {
-            flex: 1;
-            padding-right: 20px;
             text-align: center;
+            background-color: #ffffff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
         }
         .right-column {
-            flex: 2;
+            background-color: #ffffff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
         }
         .profile-pic {
-            width: 100%; /* Make image responsive */
-            max-width: 300px; /* Limit the maximum size */
-            height: auto; /* Maintain aspect ratio */
+            width: 100%;
+            max-width: 250px;
+            height: auto;
             border-radius: 50%;
             object-fit: cover;
             border: none;
-        }
-        .education-logo {
-            width: 30px; /* Adjust the size as needed */
-            height: auto;
-            vertical-align: middle; /* Aligns the logo with the text */
-            margin-right: 10px; /* Adds space between the logo and the text */
+            margin-bottom: 20px;
         }
         .section {
             margin-bottom: 20px;
         }
-        h1, h2, h3 {
-            margin-top: 0;
+        .section h2 {
+            font-family: 'Montserrat', Arial, sans-serif;
+            font-weight: bold;
+            color: #007bff;
+            border-bottom: 2px solid #eaeaea;
+            padding-bottom: 10px;
+            margin-bottom: 15px;
+        }
+        a {
+            color: #007bff;
+            text-decoration: none;
+        }
+        a:hover {
+            text-decoration: underline;
         }
         ul {
             list-style-type: none;
             padding: 0;
         }
-        .skills-list, .projects-list {
-            margin-top: 10px;
-        }
-        .skills-list li, .projects-list li {
+        .skills-list li, .projects-list li, .objectives-list li, .hobbies-list li {
             margin-bottom: 10px;
         }
-
         @media (max-width: 768px) {
             .container {
-                flex-direction: column;
-                align-items: center;
-            }
-            .left-column {
-                text-align: center;
-                padding-right: 0;
-                margin-bottom: 20px;
-            }
-            .right-column {
-                text-align: center;
+                grid-template-columns: 1fr;
             }
             h1, h2, h3 {
                 text-align: center;
@@ -76,7 +80,7 @@
 <body>
     <div class="container">
         <div class="left-column">
-            <img src="IMG_5657.jpg" alt="Profile Picture" class="profile-pic">
+            <img src="IMG_5456.jpeg" alt="Profile Picture" class="profile-pic">
             <h1>Gonzalo Vegas</h1>
             <p><a href="mailto:Gonzvegas@gmail.com">Gonzvegas@gmail.com</a></p>
             <p>Phone: 786-403-5618</p>
@@ -85,12 +89,12 @@
         <div class="right-column">
             <div class="section">
                 <h2>About Me</h2>
-                <p>With over three years of experience as a Data Analyst, I specialize in financial modeling, risk analysis, and data-driven decision-making, particularly in asset pricing and operational efficiency. My advanced skills in SQL, Python, and Alteryx, combined with a solid foundation in economics and specialized training in FinTech, allow me to automate processes, resolve data discrepancies, and transform data into actionable insights. I create KPI reports and predictive models using Power BI to guide strategic decisions. Currently pursuing a degree in Computer Science with a focus on AI and data science.</p>
+                <p>I am a master's student in Computer Science with a focus on Artificial Intelligence, bringing a strong background in economics and financial technology. I specialize in data-driven decision-making, financial modeling, and risk analysis, with a keen interest in quantitative finance.</p>
             </div>
             <div class="section">
                 <h2>Skills</h2>
                 <ul class="skills-list">
-                    <li>Programming: Python, Html ,C# ,SQL, Alteryx</li>
+                    <li>Programming: Python, SQL, Alteryx</li>
                     <li>Data Visualization: Power BI, Tableau</li>
                     <li>Financial Modeling</li>
                     <li>Risk Management</li>
@@ -99,17 +103,14 @@
             </div>
             <div class="section">
                 <h2>Education</h2>
-                
                 <p>
                     <img src="FIU.jpg" alt="FIU Logo" class="education-logo">
                     <strong><a href="https://www.fiu.edu" target="_blank">Florida International University</a></strong> – Bachelor's degree in Economics (March 2017 - March 2021)
                 </p>
-                
                 <p>
                     <img src="columbia.jpg" alt="Columbia Logo" class="education-logo">
                     <strong><a href="https://www.engineering.columbia.edu" target="_blank">Columbia University School of Engineering</a></strong> – Financial Technologies Certificate (March 2022 - October 2022)
                 </p>
-                
                 <p>
                     <img src="Nova.jpg" alt="Nova Logo" class="education-logo">
                     <strong><a href="https://www.nova.edu" target="_blank">Nova Southeastern University</a></strong> – Master's degree in Computer Science (Concentration: Artificial Intelligence) (August 2023 – December 2024)
@@ -143,3 +144,4 @@
     </div>
 </body>
 </html>
+

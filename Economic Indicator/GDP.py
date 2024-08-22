@@ -53,7 +53,7 @@ fig.update_layout(
 )
 
 # Show the plot
-fig.show()
+fig.write_html("gdp_growth_rate.html")
 
 
 
